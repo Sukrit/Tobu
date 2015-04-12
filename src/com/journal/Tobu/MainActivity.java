@@ -314,10 +314,13 @@ public class MainActivity extends ActionBarActivity implements LocationListener,
 	}
 
 	private Bitmap scaleImage(Bitmap image, double d) {
-		int srcWidth = image.getWidth();
-		int srcHeight = image.getHeight();
-		int dstWidth = (int) (srcWidth * d);
-		int dstHeight = (int) (srcHeight * d);
+		//int srcWidth = image.getWidth();
+		//int srcHeight = image.getHeight();
+		//int dstWidth = (int) (srcWidth * d);
+		//int dstHeight = (int) (srcHeight * d);
+		
+		int dstWidth = 648;
+		int dstHeight = 1152;
 		return Bitmap.createScaledBitmap(image, dstWidth, dstHeight, true);
 	}
 
